@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import SecondsCounter from "./SecondsCounter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import {faClock} from "@fortawesome/free-regular-svg-icons"
+import "@fortawesome/fontawesome-svg-core/styles.css"
 
 //create your first component
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
 	return (
 		<div className="home_container">
 			<div className="home_row">
+				<FontAwesomeIcon icon={faClock} /> 
 				<SecondsCounter number= {Math.floor(timer / 10000)%10} />
 				<SecondsCounter number= {Math.floor(timer / 10000)%10} />
 				<SecondsCounter number= {Math.floor(timer / 1000)%10} />
