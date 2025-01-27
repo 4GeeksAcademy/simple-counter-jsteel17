@@ -9,3 +9,30 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.digit_container {
+    color: white;
+    display: flex;
+    height: 48px;
+    width: 48px;
+    background-color: #202020;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_row {
+    display: flex;
+    gap: 24px;
+}
+
+i {
+    height: 48px;
+    width: 48px;
+    color: white;
+}
